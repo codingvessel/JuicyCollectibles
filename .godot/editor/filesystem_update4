@@ -1,0 +1,8 @@
+res://level.tscn
+res://coin.tscn
+res://coin_hover_fx.tscn
+res://coin_collect_fx.tscn
+res://apple.tscn
+res://collected_fx.tscn
+res://apple_vanish_fx.tscn
+res://apple_vanish_fx.gd
