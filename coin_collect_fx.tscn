@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://crawhlcxbceoy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v5em1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wm3rh"]
+atlas = SubResource("CompressedTexture2D_v5em1")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkydj"]
+atlas = SubResource("CompressedTexture2D_v5em1")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55wjw"]
+atlas = SubResource("CompressedTexture2D_v5em1")
+region = Rect2(24, 0, 12, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_30utn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wm3rh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkydj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55wjw")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="CoinCollectFx" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_30utn")
+autoplay = "default"
+frame_progress = 0.147222
